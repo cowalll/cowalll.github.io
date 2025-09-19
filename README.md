@@ -7,7 +7,7 @@ This repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.
 # PRA 1 for ECE444 2025
 
 ## Activity 1 Screenshot
-
+![Screenshot of repository](assets/img/activity1.png)
 
 ### Website Preview
 <p align="center"> 
