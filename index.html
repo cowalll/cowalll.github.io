@@ -426,7 +426,7 @@
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
+      <div class="container" id="recent-projects">
         <div class="row">
 
           <div class="col s12 m6 l4">
@@ -469,7 +469,7 @@
           </div>
 
           <div class="col s12 m6 l4">
-            <div class="card medium">
+            <div class="card medium hidden">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="github pages" src="/assets/img/project-githubpages.jpg" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -507,7 +507,7 @@
 
           <!-- Flask Project -->
           <div class="col s12 m6 l4">
-            <div class="card medium">
+            <div class="card medium hidden">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="neural network" src="/assets/img/project-neural-net.png"
                 style="height: 100%; width: 100%" class="activator" />
@@ -547,7 +547,7 @@
 
           <!-- VQA -->
           <div class="col s12 m6 l4">
-            <div class="card medium">
+            <div class="card medium hidden">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of  web app" src="/assets/img/project-accra.jpg" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -583,6 +583,13 @@
           
           <!-- ************* -->
         </div>
+        <button id="showMoreBtn">Show More</button>
+          <script>document.getElementById("showMoreBtn").addEventListener("click", function () {
+            const hiddenProjects = document.querySelectorAll(".card.medium.hidden");
+            hiddenProjects.forEach(project => project.classList.remove("hidden"));
+            this.style.display = "none";
+          });
+          </script>
       </div>
     </section>
 

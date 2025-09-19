@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .profile-pic {
   position: relative;
   max-width:130px;
